@@ -96,7 +96,7 @@ void loop() {
   if (now - lastMsg > 10000) {
     lastMsg = now;
     ++value;
-    snprintf (msg, 50, "key=1e204563cd95b5354e1678affacd56b7&var1=%ld", value);
+    snprintf (msg, 50, "key=(isi dengan api key dari iot.mapid.io)&var1=%ld", value);
     client.publish("private/egi", msg);
     Serial.print("Publish message: ");
     Serial.print(msg);
